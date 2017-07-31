@@ -5,7 +5,7 @@ describe('angularjs homepage todo list', function() {
   });
  
   it('should automatically redirect to / when location hash is empty', function() {
-	expect(element(by.css('.title')).getText()).toEqual("Ionic Blank Starter");
+	expect(element(by.css('.title')).getText()).toEqual("Ionic Blank Starter2");
     //expect(browser.getLocationAbsUrl()).toMatch("/");
   });
 
