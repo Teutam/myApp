@@ -7,7 +7,6 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 var path = require('path');
-var open = require('open');
 var express = require('express');
 var spawn = require('child_process').spawn;
 var Promise = require('bluebird');
@@ -112,7 +111,6 @@ gulp.task('serve', function() {
     //.use(!build ? connectLr({port: livereload}) : function(){})
     .use(express.static(targetDir))
     .listen(port);
-  open('http://localhost:' + port + '/');
 });
 
 /*
