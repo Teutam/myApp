@@ -46,6 +46,8 @@ var livereload = args.portReload;
 var stripDebug = !!args.stripDebug;
 var targetDir = path.resolve('www');
 
+console.log('targetDir: ', targetDir);
+
 // if we just use emualate or run without specifying platform, we assume iOS
 // in this case the value returned from yargs would just be true
 if (emulate === true) {
